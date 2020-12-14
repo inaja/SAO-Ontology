@@ -1,0 +1,533 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.4), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "https://w3id.org/ep-plan", "http://www.w3.org/2002/07/owl", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/ns/prov", "http://www.w3.org/2001/XMLSchema", "https://w3id.org/sao" ],
+    "title" : {
+      "en" : "The System Accountability Ontology"
+    },
+    "iri" : "https://w3id.org/sao",
+    "version" : "1.0. December 2020",
+    "author" : [ "https://www.abdn.ac.uk/ncs/profiles/milan.markovic/", "https://www.abdn.ac.uk/ncs/profiles/iman.naja" ],
+    "labels" : {
+      "undefined" : "The System Accountability Ontology"
+    },
+    "comments" : {
+      "en" : "To contact the RAInS team, please send an email to therainsproject [at] gmail [dot] com"
+    },
+    "other" : {
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+        "type" : "iri"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "https://www.abdn.ac.uk/ncs/profiles/milan.markovic/",
+        "type" : "iri"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "https://www.abdn.ac.uk/ncs/profiles/iman.naja",
+        "type" : "iri"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "en",
+        "value" : "1.0. December 2020",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "en",
+        "value" : "The System Accountability Ontology",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "metrics" : {
+    "classCount" : 14,
+    "objectPropertyCount" : 12,
+    "datatypePropertyCount" : 0,
+    "individualCount" : 0
+  },
+  "class" : [ {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "22",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "24",
+    "type" : "owl:Class"
+  }, {
+    "id" : "19",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "https://w3id.org/sao#AccountabilityPlan",
+    "baseIri" : "https://w3id.org/sao",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AccountabilityPlan",
+      "undefined" : "Accountability Plan"
+    },
+    "comment" : {
+      "undefined" : "A plan which describes a specification of the information that should be collected, so as to support accountability of systems."
+    },
+    "id" : "3",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "https://w3id.org/ep-plan#Entity",
+    "baseIri" : "https://w3id.org/ep-plan",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Entity"
+    },
+    "subClasses" : [ "11" ],
+    "attributes" : [ "external" ],
+    "id" : "6"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "12",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "https://w3id.org/sao#AccountableObject",
+    "baseIri" : "https://w3id.org/sao",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AccountableObject",
+      "undefined" : "Accountable Object"
+    },
+    "subClasses" : [ "14" ],
+    "comment" : {
+      "undefined" : "An accountable object models an abstract representation of a thing that should be documented for accountability. This may reference the whole system, its logical part, or associated process.  For example, a larger system may be described as a group of sub-systems or a single system may be broken down into a number of layers/components (e.g., a decision logic layer)."
+    },
+    "id" : "2"
+  }, {
+    "iri" : "https://w3id.org/sao#InformationElement",
+    "baseIri" : "https://w3id.org/sao",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "InformationElement",
+      "undefined" : "Information Element"
+    },
+    "subClasses" : [ "7" ],
+    "comment" : {
+      "undefined" : "A member of the collection of type Information Realization. Information Realizations may have multiple Information Elements.  Information Element describes in more detail a specific type of information contained by the Information Realization collection."
+    },
+    "id" : "11",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "https://w3id.org/sao#AccountableAgent",
+    "baseIri" : "https://w3id.org/sao",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AccountableAgent",
+      "undefined" : "Accountable Agent"
+    },
+    "comment" : {
+      "undefined" : "An agent (typpically a human)  that can be held accountable for his/her actions."
+    },
+    "id" : "7",
+    "superClasses" : [ "19", "11" ]
+  }, {
+    "iri" : "https://w3id.org/sao#System",
+    "baseIri" : "https://w3id.org/sao",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "System",
+      "undefined" : "System"
+    },
+    "comment" : {
+      "undefined" : "A system that the collected accoutability information is about."
+    },
+    "id" : "14",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "https://w3id.org/ep-plan#MultiVariable",
+    "baseIri" : "https://w3id.org/ep-plan",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MultiVariable"
+    },
+    "subClasses" : [ "1" ],
+    "attributes" : [ "external" ],
+    "id" : "18"
+  }, {
+    "iri" : "https://w3id.org/ep-plan#MultiStep",
+    "baseIri" : "https://w3id.org/ep-plan",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MultiStep"
+    },
+    "subClasses" : [ "21" ],
+    "attributes" : [ "external" ],
+    "id" : "22"
+  }, {
+    "iri" : "https://w3id.org/sao#InformationRealization",
+    "baseIri" : "https://w3id.org/sao",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "InformationRealization",
+      "undefined" : "Information Realization"
+    },
+    "comment" : {
+      "undefined" : "A collection of pieces of information (InformationElements) which corresponds to a variable of type  AccountableResult. The collection represents the actual piece of provenance infomration documenting a specific AccountableResult durring a single plan execution."
+    },
+    "id" : "10",
+    "superClasses" : [ "24" ]
+  }, {
+    "iri" : "https://w3id.org/sao#AccountableResult",
+    "baseIri" : "https://w3id.org/sao",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AccountableResult",
+      "undefined" : "Accountable Result"
+    },
+    "comment" : {
+      "undefined" : "An output variable which is produced by an Accountable Action, for example,  a decision made by a human or a specification produced by a team. The variable is part of the accountability plan and has a corresponding InformationRealization collection in the execution trace."
+    },
+    "id" : "1",
+    "superClasses" : [ "18" ]
+  }, {
+    "iri" : "https://w3id.org/sao#AccountableAction",
+    "baseIri" : "https://w3id.org/sao",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AccountableAction",
+      "undefined" : "Accountable Action"
+    },
+    "comment" : {
+      "undefined" : "A planned step which is deemed to be important for accountability purposes and produces AccountableResult."
+    },
+    "id" : "21",
+    "superClasses" : [ "22" ]
+  }, {
+    "iri" : "https://w3id.org/ep-plan#EntityCollection",
+    "baseIri" : "https://w3id.org/ep-plan",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "EntityCollection"
+    },
+    "subClasses" : [ "10" ],
+    "attributes" : [ "external" ],
+    "id" : "24"
+  }, {
+    "iri" : "https://w3id.org/ep-plan#Agent",
+    "baseIri" : "https://w3id.org/ep-plan",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Agent"
+    },
+    "subClasses" : [ "7" ],
+    "attributes" : [ "external" ],
+    "id" : "19"
+  }, {
+    "iri" : "https://w3id.org/ep-plan#Plan",
+    "baseIri" : "https://w3id.org/ep-plan",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Plan"
+    },
+    "subClasses" : [ "3" ],
+    "attributes" : [ "external" ],
+    "id" : "4"
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "5",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "9",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "13",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "15",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "16",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "17",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "20",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "23",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "25",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "27",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "29",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "30",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "8",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "26",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "31",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "32",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "28",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "33",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "34",
+    "type" : "rdfs:SubClassOf"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "https://w3id.org/sao#relatesToAccountableObject",
+    "baseIri" : "https://w3id.org/sao",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "relatesToAccountableObject",
+      "undefined" : "relates to accountable object"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "A relation which describes the information described by an accountable result relates to an accountable object."
+    },
+    "attributes" : [ "object" ],
+    "id" : "0"
+  }, {
+    "iri" : "https://w3id.org/sao#hasAccountableAgent",
+    "inverse" : "8",
+    "baseIri" : "https://w3id.org/sao",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "hasAccountableAgent",
+      "undefined" : "has accountable agent"
+    },
+    "domain" : "6",
+    "comment" : {
+      "undefined" : "Inverse of is accountable for"
+    },
+    "attributes" : [ "object" ],
+    "id" : "5"
+  }, {
+    "iri" : "https://w3id.org/ep-plan#correspondsToVariable",
+    "baseIri" : "https://w3id.org/ep-plan",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "correspondsToVariable"
+    },
+    "domain" : "10",
+    "attributes" : [ "object", "allValues", "external" ],
+    "id" : "9"
+  }, {
+    "range" : "6",
+    "domain" : "11",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "13"
+  }, {
+    "range" : "2",
+    "domain" : "14",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "15"
+  }, {
+    "range" : "11",
+    "domain" : "7",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "16"
+  }, {
+    "range" : "18",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "17"
+  }, {
+    "range" : "22",
+    "domain" : "21",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "20"
+  }, {
+    "range" : "24",
+    "domain" : "10",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "23"
+  }, {
+    "iri" : "https://w3id.org/sao#hasSpecifiedAccountabiltyPlan",
+    "inverse" : "26",
+    "baseIri" : "https://w3id.org/sao",
+    "range" : "3",
+    "label" : {
+      "IRI-based" : "hasSpecifiedAccountabiltyPlan",
+      "undefined" : "has specified accountability plan"
+    },
+    "domain" : "14",
+    "comment" : {
+      "undefined" : "Inverse of specified for system."
+    },
+    "attributes" : [ "object" ],
+    "id" : "25"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+    "baseIri" : "http://www.w3.org/2002/07/owl",
+    "range" : "12",
+    "label" : {
+      "IRI-based" : "topObjectProperty"
+    },
+    "domain" : "12",
+    "subproperty" : [ "28" ],
+    "attributes" : [ "object", "external" ],
+    "id" : "27"
+  }, {
+    "iri" : "https://w3id.org/ep-plan#hasCorrespondingEntity",
+    "baseIri" : "https://w3id.org/ep-plan",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "hasCorrespondingEntity"
+    },
+    "domain" : "1",
+    "attributes" : [ "object", "allValues", "external" ],
+    "id" : "29"
+  }, {
+    "iri" : "http://www.w3.org/ns/prov#hadMember",
+    "baseIri" : "http://www.w3.org/ns/prov",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "hadMember"
+    },
+    "domain" : "10",
+    "attributes" : [ "object", "allValues", "external" ],
+    "id" : "30"
+  }, {
+    "iri" : "https://w3id.org/sao#isAccountableFor",
+    "baseIri" : "https://w3id.org/sao",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "isAccountableFor",
+      "undefined" : "is accountable for"
+    },
+    "domain" : "7",
+    "comment" : {
+      "undefined" : "A relation that links accountable agents to entities tehy are accountable for."
+    },
+    "attributes" : [ "object" ],
+    "id" : "8"
+  }, {
+    "iri" : "https://w3id.org/sao#specifiedForSystem",
+    "baseIri" : "https://w3id.org/sao",
+    "range" : "14",
+    "label" : {
+      "IRI-based" : "specifiedForSystem",
+      "undefined" : "specified for system"
+    },
+    "domain" : "3",
+    "comment" : {
+      "undefined" : "A relation that links the accountability plan to the system it was specified for."
+    },
+    "attributes" : [ "object" ],
+    "id" : "26"
+  }, {
+    "iri" : "https://w3id.org/sao#isImpactedBy",
+    "baseIri" : "https://w3id.org/sao",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "isImpactedBy",
+      "undefined" : "is impacted by"
+    },
+    "domain" : "14",
+    "comment" : {
+      "undefined" : "Inverse of impacts."
+    },
+    "attributes" : [ "object" ],
+    "id" : "31"
+  }, {
+    "iri" : "https://w3id.org/sao#impacts",
+    "inverse" : "31",
+    "baseIri" : "https://w3id.org/sao",
+    "range" : "14",
+    "label" : {
+      "IRI-based" : "impacts",
+      "undefined" : "impacts"
+    },
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "A relation which describes that an accountable object have some effect on the system's accountability."
+    },
+    "attributes" : [ "object" ],
+    "id" : "32"
+  }, {
+    "iri" : "https://w3id.org/sao#hasRelatedAccountableResult",
+    "inverse" : "0",
+    "baseIri" : "https://w3id.org/sao",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasRelatedAccountableResult",
+      "undefined" : "has related accountable result"
+    },
+    "superproperty" : [ "27" ],
+    "domain" : "2",
+    "attributes" : [ "object" ],
+    "id" : "28"
+  }, {
+    "range" : "19",
+    "domain" : "7",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "33"
+  }, {
+    "range" : "4",
+    "domain" : "3",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "34"
+  } ]
+}
