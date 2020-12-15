@@ -8,6 +8,7 @@
 
 <https://w3id.org/sao> rdf:type owl:Ontology ;
                         <http://purl.org/dc/terms/creator> <https://www.abdn.ac.uk/ncs/profiles/iman.naja> ,
+                                                           <https://www.abdn.ac.uk/ncs/profiles/p.edwards> ,
                                                            <https://www.abdn.ac.uk/ncs/profiles/milan.markovic/> ;
                         <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
                         <http://purl.org/dc/terms/title> "The System Accountability Ontology"@en ;
@@ -50,6 +51,8 @@
 ###  https://w3id.org/sao#hasAccountableAgent
 :hasAccountableAgent rdf:type owl:ObjectProperty ;
                      owl:inverseOf :isAccountableFor ;
+                     rdfs:domain <https://w3id.org/ep-plan#Entity> ;
+                     rdfs:range :AccountableAgent ;
                      rdfs:comment "Inverse of is accountable for" ;
                      rdfs:label "has accountable agent" .
 

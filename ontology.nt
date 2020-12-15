@@ -1,5 +1,6 @@
 <https://w3id.org/sao> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
 <https://w3id.org/sao> <http://purl.org/dc/terms/creator> <https://www.abdn.ac.uk/ncs/profiles/iman.naja> .
+<https://w3id.org/sao> <http://purl.org/dc/terms/creator> <https://www.abdn.ac.uk/ncs/profiles/p.edwards> .
 <https://w3id.org/sao> <http://purl.org/dc/terms/creator> <https://www.abdn.ac.uk/ncs/profiles/milan.markovic/> .
 <https://w3id.org/sao> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by-nc-sa/4.0/> .
 <https://w3id.org/sao> <http://purl.org/dc/terms/title> "The System Accountability Ontology"@en .
@@ -45,6 +46,8 @@
 # https://w3id.org/sao#hasAccountableAgent
 <https://w3id.org/sao#hasAccountableAgent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/sao#hasAccountableAgent> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/sao#isAccountableFor> .
+<https://w3id.org/sao#hasAccountableAgent> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ep-plan#Entity> .
+<https://w3id.org/sao#hasAccountableAgent> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/sao#AccountableAgent> .
 <https://w3id.org/sao#hasAccountableAgent> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse of is accountable for" .
 <https://w3id.org/sao#hasAccountableAgent> <http://www.w3.org/2000/01/rdf-schema#label> "has accountable agent" .
 # 

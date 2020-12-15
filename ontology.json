@@ -67,6 +67,8 @@
   "http://purl.org/dc/terms/creator" : [ {
     "@id" : "https://www.abdn.ac.uk/ncs/profiles/iman.naja"
   }, {
+    "@id" : "https://www.abdn.ac.uk/ncs/profiles/p.edwards"
+  }, {
     "@id" : "https://www.abdn.ac.uk/ncs/profiles/milan.markovic/"
   } ],
   "http://purl.org/dc/terms/license" : [ {
@@ -194,8 +196,14 @@
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Inverse of is accountable for"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/ep-plan#Entity"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has accountable agent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/sao#AccountableAgent"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
     "@id" : "https://w3id.org/sao#isAccountableFor"

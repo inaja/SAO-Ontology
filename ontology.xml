@@ -9,6 +9,7 @@
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="https://w3id.org/sao">
         <terms:creator rdf:resource="https://www.abdn.ac.uk/ncs/profiles/iman.naja"/>
+        <terms:creator rdf:resource="https://www.abdn.ac.uk/ncs/profiles/p.edwards"/>
         <terms:creator rdf:resource="https://www.abdn.ac.uk/ncs/profiles/milan.markovic/"/>
         <terms:license rdf:resource="https://creativecommons.org/licenses/by-nc-sa/4.0/"/>
         <terms:title xml:lang="en">The System Accountability Ontology</terms:title>
@@ -90,6 +91,8 @@
 
     <owl:ObjectProperty rdf:about="https://w3id.org/sao#hasAccountableAgent">
         <owl:inverseOf rdf:resource="https://w3id.org/sao#isAccountableFor"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ep-plan#Entity"/>
+        <rdfs:range rdf:resource="https://w3id.org/sao#AccountableAgent"/>
         <rdfs:comment>Inverse of is accountable for</rdfs:comment>
         <rdfs:label>has accountable agent</rdfs:label>
     </owl:ObjectProperty>
